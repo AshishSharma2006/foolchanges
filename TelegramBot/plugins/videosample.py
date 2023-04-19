@@ -44,7 +44,7 @@ async def generate_videosample_from_link(
     filename = filename.replace(" ", ".")
 
     rand_str = randstr()
-    output_path = f"download/[Sample By Tg : @EliteFlixMediaInfoBot]__(filename)"
+    output_path = f"download/[Sample By Tg : @EliteFlixMediaInfoBot]_(filename)"
 
     ffmpeg_command = f"ffmpeg -headers '{headers}' -y -i {file_url} -ss {timestamp} -t 00:0{int(duration)}:00  -map 0:v? -map 0:a? -map 0:s? -map 0:d? -c copy {output_path}"
     shell_output = await async_subprocess(ffmpeg_command)
