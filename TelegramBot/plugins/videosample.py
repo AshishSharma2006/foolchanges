@@ -41,8 +41,7 @@ async def generate_videosample_from_link(
     await replymsg.edit(
         f"Generating {duration} min video sample from `{unquote(filename)}`, please wait ...")
     original_name = filename
-    filename = filename.replace(" ", ".")
-
+    filename = filename
     rand_str = randstr()
     output_path = f"download/[Sample By Tg : @EliteFlixMediaInfoBot]_{filename}"
 
