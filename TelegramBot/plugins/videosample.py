@@ -176,7 +176,7 @@ async def telegram_videosample(message, client, duration):
             quote=True)
 
         rand_str = randstr()
-        download_path = f"download/{rand_str}_{filename}"
+        download_path = f"download/{filename}"
 
         async for chunk in client.stream_media(message, limit=5):
             with open(download_path, "ab") as f:
@@ -197,7 +197,7 @@ async def telegram_videosample(message, client, duration):
                 file.write(chunk)
 
         # fixing the file metadata.
-        output_path = f"download/{rand_str}_output_{filename}"
+        output_path = f"download/Test_{filename}"
         ffmpeg_command = f"ffmpeg -ss 00:00:0 -i '{download_path}' -t 00:0'{int(duration)}':00 -map 0:v? -map 0:a? -map 0:s? -map 0:d? -c copy '{output_path}'"
         await async_subprocess(ffmpeg_command)
 
