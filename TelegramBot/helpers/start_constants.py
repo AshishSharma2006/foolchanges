@@ -24,7 +24,7 @@ ABOUT_CAPTION = f"""• Python version : {__python_version__}
 • pyrogram  version : {__pyro_version__}
 
 **Backup Channel**: https://t.me/Eliteflix_Official
-**Owner**: https://t.me/AshishSharmaLgend"""
+**Owner**: https://t.me/AshishSharmaLegend"""
 
 START_ANIMATION = "https://telegra.ph/file/c0857672b427bec8542f6.mp4"
 
