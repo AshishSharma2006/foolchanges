@@ -57,7 +57,7 @@ async def generate_videosample_from_link(
     await replymsg.edit("Uploading the video file, Please wait...")
     await message.reply_video(
         video=output_path,
-        caption=f"[**{duration}min Sample**] {original_name}\n\n**Sample By :** @EliteFlixMediaInfoBot",
+        caption=f"[**{duration}min Sample**] {original_name}\n\n**Sample Video By :** @EliteFlixMediaInfoBot",
         thumb=thumb_path,
         quote=True)
 
@@ -204,7 +204,7 @@ async def telegram_videosample(message, client, duration):
         await replymsg.edit("Uploading the video file, Please wait...")
         await message.reply_video(
             video=output_path,
-            caption=f"[**{duration}min Sample**] {filename}\n\n**Sample By :** @EliteFlixMediaInfoBot",
+            caption=f"[**{duration}min Sample**] {filename}\n\n**Sample Video By :** @EliteFlixMediaInfoBot",
             thumb=thumb_path,
             quote=True)
 
