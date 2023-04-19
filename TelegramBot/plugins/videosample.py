@@ -21,7 +21,7 @@ from TelegramBot.helpers.gdrivehelper import GoogleDriveHelper
 # thumbnail of the video file.
 thumb_path = f"thumb.jpg"
 thumb = requests.get(
-    "https://te.legra.ph/file/508f1cd599bb3d9352e88.jpg", allow_redirects=True)
+    "https://te.legra.ph/file/1a733b09b8eb859964010.jpg", allow_redirects=True)
 open(thumb_path, "wb").write(thumb.content)
 
 
