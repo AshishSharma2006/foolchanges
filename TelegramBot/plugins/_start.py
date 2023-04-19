@@ -17,7 +17,7 @@ START_BUTTON = [
     ],
     [
         InlineKeyboardButton(
-            "🔭 Original Repo", url="https://github.com/sanjit-sinha/Tg-MediaInfoBot"
+            "Backup Channel ❤🖤", url="https://t.me/Eliteflix_Official"
         )
     ],
 ]
